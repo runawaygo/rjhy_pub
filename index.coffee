@@ -1,8 +1,11 @@
 $ ->
-  console.log 'superwolf'
   $('.module-footer').click (e)->
-    console.log 'supoerwolf'
-    $(this).parent('.module').toggleClass('box-up')
+    $footer = $(this)
+    $footer.parent('.module').toggleClass('box-up')
+    if $footer.parent('.module').hasClass('box-up')
+      $footer.html($footer.attr('data-down'))
+    else 
+      $footer.html($footer.attr('data-up'))
 
   $('#share-btn').click (e)->
     $('.share-box').show()
