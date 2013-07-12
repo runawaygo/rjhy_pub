@@ -1,5 +1,4 @@
 $ ->
-  console.log 'superwolf'
   $('.module-footer').click (e)->
     console.log 'supoerwolf'
     $(this).parent('.module').toggleClass('box-up')
