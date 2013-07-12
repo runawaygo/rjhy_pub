@@ -13,3 +13,9 @@ $ ->
 
   $('.share-cancel-btn').click (e)->
     $('.share-box').hide()
+
+  localUrl = window.location.toString()
+  $('.share-box a').each (index, item)->
+    $item = $(item)
+    hrefStr = $item.attr('href')
+    $item.attr('href', localUrl)
