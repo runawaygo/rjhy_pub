@@ -3,6 +3,12 @@ body {
   color: #5a5a5a;
   padding: 0px;
   margin: 0px;
+  font-size: 16px;
+}
+line {
+  border-top: 1px dotted #333;
+  display: block;
+  margin: 5px 0px;
 }
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
