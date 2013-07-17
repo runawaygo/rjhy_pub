@@ -2,7 +2,35 @@
 (function() {
 
   $(function() {
-    var localUrl;
+    var isiOS, localUrl;
+    isiOS = function() {
+      var isMobile;
+      isMobile = {
+        Android: function() {
+          return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function() {
+          return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function() {
+          return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function() {
+          return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function() {
+          return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function() {
+          return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows();
+        }
+      };
+      if (isMobile.iOS()) {
+        return true;
+      } else {
+        return false;
+      }
+    };
     $('.module-footer').click(function(e) {
       var $footer;
       $footer = $(this);
@@ -20,12 +48,13 @@
       return $('.share-box').hide();
     });
     localUrl = window.location.toString();
-    return $('.share-box a').each(function(index, item) {
+    $('.share-box a').each(function(index, item) {
       var $item, hrefStr;
       $item = $(item);
       hrefStr = $item.attr('href');
       return $item.attr('href', localUrl);
     });
+    return console.log(isiOS());
   });
 
 }).call(this);
