@@ -29,11 +29,18 @@ $ ->
   $('.share-cancel-btn').click (e)->
     $('.share-box').hide()
 
+  #Bind share url
   localUrl = window.location.toString()
   $('.share-box a').each (index, item)->
     $item = $(item)
     hrefStr = $item.attr('href')
     $item.attr('href', localUrl)
 
-  console.log isiOS()
+  #Bind app download url
+  if isiOS()
+    $('#download-btn').attr('href','https://itunes.apple.com/us/app/jin-ru-yi/id569471235?ls=1&mt=8')
+  else
+    $('#download-btn').attr('href','http://www.5800.com/ruanjian/app.apk')
+
+
 
