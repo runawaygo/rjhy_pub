@@ -61,6 +61,9 @@ line {
   font-size: 14px;
   font-weight: bold;
 }
+.firstth {
+  width: 30px;
+}
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 /* Carousel base class */
@@ -194,7 +197,7 @@ line {
   margin: 0;
   padding: 8px 14px;
   color: #5B96B3;
-  font-size: 16px;
+  font-size: 14px;
 }
 .module-content {
   padding: 9px 14px;
