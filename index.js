@@ -51,7 +51,7 @@ $(function() {
     var $item, hrefStr;
     $item = $(item);
     hrefStr = $item.attr('href');
-    return $item.attr('href', localUrl);
+    return $item.attr('href', hrefStr.replace('{{url}}', localUrl));
   });
   if (isiOS()) {
     return $('#download-btn').attr('href', 'https://itunes.apple.com/us/app/jin-ru-yi/id569471235?ls=1&mt=8');

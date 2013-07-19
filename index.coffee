@@ -34,7 +34,7 @@ $ ->
   $('.share-box a').each (index, item)->
     $item = $(item)
     hrefStr = $item.attr('href')
-    $item.attr('href', localUrl)
+    $item.attr('href', hrefStr.replace('{{url}}', localUrl))
 
   #Bind app download url
   if isiOS()
