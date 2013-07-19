@@ -52,8 +52,16 @@ line{
       }
     }
 }
+.boldfont{
+  font-weight: bold;
+}
 .redfont{
     color:red;
+}
+.bluefont{
+    color:#5B96B3;
+    font-size: 14px;
+    font-weight: bold;
 }
 .tips{
     font-size:12px;
@@ -87,6 +95,11 @@ line{
       margin-right:5px;
     }
   }
+}
+.wximg{
+  width: 0px;
+  height: 0px;
+  position: absolute;
 }
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -210,7 +223,11 @@ line{
   padding: 1px;
   white-space: normal;
   margin: 0 10px 10px;
-
+  &.none.box-up .module-content{
+    height: 0px;
+    overflow: hidden;
+    padding: 0px;
+  }
   &.short.box-up .module-content{
     height: 85px;
     overflow: hidden;
