@@ -16,12 +16,18 @@ $ ->
     if isMobile.iOS() then true else false
 
   $('.module-footer').click (e)->
+    console.log 'footer'
     $footer = $(this)
+    $i = $footer.find('i')
     $footer.parent('.module').toggleClass('box-up')
+    console.log 'change class'
     if $footer.parent('.module').hasClass('box-up')
-      $footer.html($footer.attr('data-down'))
+      $i.addClass($footer.attr('data-up'))
+      $i.removeClass($footer.attr('data-down'))
     else 
-      $footer.html($footer.attr('data-up'))
+      $i.addClass($footer.attr('data-down'))
+      $i.removeClass($footer.attr('data-up'))
+    
 
   $('#share-btn').click (e)->
     $('.share-box').show()
