@@ -27,6 +27,7 @@ line{border-top:1px dotted #333;display:block;margin:5px 5px}
 .carousel-indicators{top:auto;right:0;left:0;bottom:0;height:20px;padding:2px 5px;background-color:rgba(100,100,100,0.7);text-align:center}
 .carousel-indicators li{float:right;margin-top:5px}
 @media (max-width:767px){.carousel .item{height:250px} .carousel img{height:250px} .carousel-caption{width:65%;padding:0 70px;margin-top:100px} .carousel-caption h1{font-size:30px} .carousel-caption .lead,.carousel-caption .btn{font-size:18px}}.bottom-title{position:absolute;left:0;right:0;bottom:0;color:#333;margin:0;padding:10px}
+.module-container{margin-bottom:42px}
 .module{background-clip:padding-box;background-color:#fff;border:1px solid rgba(0,0,0,0.2);border-radius:6px 6px 6px 6px;box-shadow:0 5px 10px rgba(0,0,0,0.2);padding:1px;white-space:normal;margin:0 10px 10px}.module.none.box-up .module-content{height:0;overflow:hidden;padding-top:0;padding-bottom:0}
 .module.short.box-up .module-content{height:80px;overflow:hidden}
 .module.middle.box-up .module-content{height:280px;overflow:hidden}
