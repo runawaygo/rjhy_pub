@@ -11,9 +11,9 @@ line{border-top:1px dotted #333;display:block;margin:5px 5px;}
 .tips{font-size:12px;}
 .module-title1{text-align:center;font-size:14px;font-weight:bold;}
 .module-title2{font-size:14px;font-weight:bold;}
-.firstth{width:50px;}
+.firstth{width:42px;}
 .weixin{background-image:url(imgs/bg.png);background-repeat:no-repeat;background-position:center right;background-size:146px 179px;}.weixin .f1{margin-left:20%;}
-.vstable td{font-size:12px;padding:5px;}.vstable td .media>.pull-left{margin-right:5px;}
+.vstable td{font-size:12px;padding:5px;}.vstable td .media>.pull-left{margin-right:0px;}
 .wximg{width:0px;height:0px;position:absolute;}
 .carousel{margin-bottom:10px;}
 .carousel .container{position:relative;z-index:9;}
