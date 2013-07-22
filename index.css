@@ -1,7 +1,7 @@
 html,body{color:#5a5a5a;padding:0;margin:0;font-size:16px;background-color:#333}
 line{border-top:1px dotted #333;display:block;margin:5px 5px}
 .compare-table{width:100%}.compare-table td{width:25%;height:100px;text-align:center;vertical-align:top}
-.advantage-table td{width:128px;vertical-align:top;text-align:center}.advantage-table td .label{display:block;white-space:normal}
+.advantage-table{width:100%}.advantage-table td{width:50%;vertical-align:top;text-align:center}.advantage-table td .label{display:block;white-space:normal}
 .advantage-table td img{width:80%}
 .advantage-div{width:66%;margin:0 auto}.advantage-div td{width:50%;vertical-align:top;text-align:center}.advantage-div td .label{display:block;white-space:normal}
 .picdiv{text-align:center}.picdiv img{width:70%}
@@ -14,6 +14,7 @@ line{border-top:1px dotted #333;display:block;margin:5px 5px}
 .firstth{width:42px}
 .weixin{background-image:url(imgs/bg.png);background-repeat:no-repeat;background-position:center right;background-size:146px 179px}.weixin .f1{margin-left:20%}
 .vstable td{font-size:12px;padding:5px}.vstable td .media>.pull-left{margin-right:0}
+.vstable td:nth-child(2){width:95px}
 .wximg{width:0;height:0;position:absolute}
 .carousel{margin-bottom:10px}
 .carousel .container{position:relative;z-index:9}
